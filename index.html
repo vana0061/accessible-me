@@ -8,7 +8,7 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Inter:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -29,7 +29,9 @@
         </ul>
       </div>
     </nav>
-    <img src="https://placekitten.com/1200/900" class="banner" alt="a kitten">
+    <div class="image">
+      <img src="https://placekitten.com/1200/900" class="banner" alt="a kitten">
+    </div>
   </header>
   <main>
     <article role="article">
@@ -41,10 +43,10 @@
       <section class="owner">
         <h3>Meet the owner</h3>
         <ul itemscope itemtype="https://schema.org/Person">
-          <li itemprop="name">Name: John Doe</li>
-          <li itemprop="jobTitle">Title: CEO</li>
-          <li itemprop="email">Email: johnjoe@jambox.ca</li>
-          <li itemprop="telephone">Phone: 613-000-0000</li>
+          <li itemprop="name"><b>Name:</b> John Doe</li>
+          <li itemprop="jobTitle"><b>Title:</b> CEO</li>
+          <li itemprop="email"><b>Email:</b> johnjoe@jambox.ca</li>
+          <li itemprop="telephone"> <b>Phone:</b> 613-000-0000</li>
         </ul>
       </section>
       <hr>
@@ -63,13 +65,13 @@
       <section class="contact">
         <h5>Contact Us</h5>
         <form action="thanks.html">
-          <label for="fullname">Name</label>
+          <label for="fullname">Name:</label>
           <input type="text" id="fullname" name="fullname" placeholder="Full Name">
-          <label for="youremail">Your Email</label>
+          <label for="youremail">Your Email:</label>
           <input type="email" id="youremail" name="youremail" placeholder="Your email">
-          <label for="subject">Subject</label>
+          <label for="subject">Subject:</label>
           <input type="text" id="subject" name="subject" placeholder="Subject">
-          <label for="yourmessage">Your Message</label>
+          <label for="yourmessage">Your Message:</label>
           <input type="text" id="yourmessage" name="yourmessage" placeholder="Message">
           <button type="submit">Submit</button>
         </form>
